@@ -1,0 +1,5 @@
+FileName	SampleName	Genotype	Status
+SRR21656241	7065_DR1	7065	drought
+SRR21656242	7065_IR1	7065	irrigated
+SRR21656243	2094_DR1	2094	drought
+SRR21656244	2094_IR1	2094	irrigated
