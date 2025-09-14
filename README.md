@@ -11,7 +11,7 @@
 ---
 
 ## 🛠️ Usage
-- Most of the scripts require high computational resources and were writen to run jobs with [Son of Grid Engine (SGE)](https://wiki.archlinux.org/title/Son_of_Grid_Engine)
+- Most of the scripts require high computational resources and were writen to run jobs with [Son of Grid Engine (SGE)](https://wiki.archlinux.org/title/Son_of_Grid_Engine).
 ### Data Retrieval and Salmon Quantification (SCRIPTS/SALMON_RETRIEVAL_QUANT.sh) **SGE**
 - **THIS SCRIPT REQUIRES SALMON INDEX** before it can be executed.
 - **THIS SCRIPT HAS TO BE EXECUTED FROM INSIDE "16_PRJ_ANALYSIS/PROJECTS" folder since it uses relative path.**
@@ -131,7 +131,7 @@ This project is licensed under the [MIT License](LICENSE).
 └── README.md
 ```
 
-- Under the subfolder (PROJECTS) each of the 16 projects are listed with fixed structure for five files:
--- The file "contrasts.txt" contains the contrast name retrieved from the Metadata from the SRA database (all represents drought contrasts but with different names for different projects).
--- The file "samplefinfo.txt" contains all the Metadata retrieved from the SRA database.
--- The files "SRR_Acc_list.txt", "SRR_Acc_Lists.txt" and "SRR_Acc_Listp.txt" represents all the reads for each project, split for single/paired ended reads since some projects mix both.
+## Under the subfolder (PROJECTS) each of the 16 projects are listed with fixed structure for five files:
+- The file "contrasts.txt" contains the contrast name retrieved from the Metadata from the SRA database (all represents drought contrasts but with different names for different projects).
+- The file "samplefinfo.txt" contains all the Metadata retrieved from the SRA database.
+- The files "SRR_Acc_list.txt", "SRR_Acc_Lists.txt" and "SRR_Acc_Listp.txt" represents all the reads for each project, split for single/paired ended reads since some projects mix both.
