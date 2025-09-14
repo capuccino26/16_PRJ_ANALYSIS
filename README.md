@@ -12,7 +12,7 @@
 
 ## 🛠️ Usage
 - Most of the scripts require high computational resources and were writen to run jobs with [Son of Grid Engine (SGE)](https://wiki.archlinux.org/title/Son_of_Grid_Engine)
-### Data Retrieval and Salmon Quantification (SCRIPTS/SALMON_RETRIEVAL_QUANT.sh) **SGE
+### Data Retrieval and Salmon Quantification (SCRIPTS/SALMON_RETRIEVAL_QUANT.sh) **SGE**
 - **THIS SCRIPT REQUIRES SALMON INDEX** before it can be executed.
 - **THIS SCRIPT HAS TO BE EXECUTED FROM INSIDE "16_PRJ_ANALYSIS/PROJECTS" folder since it uses relative path.
 - The script reads all available folders with fixed structure (see below), each folder represents one of the 16 projects previously selected.
@@ -29,6 +29,7 @@ This project is licensed under the [MIT License](LICENSE).
 ---
 
 ## 📂 Project Structure
+```markdown
 16_PRJ_ANALYSIS/
 ├── PROJECTS/
 │   ├── PRJNA182108/
@@ -128,6 +129,7 @@ This project is licensed under the [MIT License](LICENSE).
 │       ├── SRR_Acc_Lists.txt
 │       └── SRR_Acc_List.txt
 └── README.md
+```
 
 - Under the subfolder (PROJECTS) each of the 16 projects are listed with fixed structure for five files:
 -- The file "contrasts.txt" contains the contrast name retrieved from the Metadata from the SRA database (all represents drought contrasts but with different names for different projects).
