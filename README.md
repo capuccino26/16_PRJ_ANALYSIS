@@ -1,4 +1,4 @@
-# 16_PRJ_ANALYSIS
+]# 16_PRJ_ANALYSIS
 
 > Complete meta-analysis of NCBI SRA database for sugarcane under water deficit.
 
@@ -12,6 +12,25 @@
 
 ## 🛠️ Usage
 - Most of the scripts require high computational resources and were writen to run jobs with [Son of Grid Engine (SGE)](https://wiki.archlinux.org/title/Son_of_Grid_Engine).
+
+### Star Genome Generate (SCRIPTS/STAR_GENOMEGENERATE.sh)
+- **THIS SCRIPT HAS TO BE EXECUTED FROM THE MAIN FOLDER.**
+- This script uses Genome/Transcriptome (not provided) to create the STAR genome reference for further steps.
+
+### Data Retrieval and STAR Quantification (SCRIPTS/STAR_RETRIEVAL_QUANT.sh) **SGE**
+- **THIS SCRIPT REQUIRES STAR INDEX** before it can be executed.
+- **THIS SCRIPT HAS TO BE EXECUTED FROM INSIDE "16_PRJ_ANALYSIS/PROJECTS" folder since it uses relative path.**
+- The script reads all available folders with fixed structure (see below), each folder represents one of the 16 projects previously selected.
+- Each folder (for each of the 16 projects) have one file with Access Number information (SRR_Acc_List.txt), which is the main file for reads information.
+- After data retrieval, the script will run [FastP](https://pmc.ncbi.nlm.nih.gov/articles/PMC6129281/) for cleaning and generation of quality reports.
+- After cleaning, the script then run [STAR](https://github.com/alexdobin/STAR) for generating quantification tables.
+- Finally, the script runs [MULTIQC](https://github.com/MultiQC/MultiQC) for generating general report and [FASTQC](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/) for individual reports.
+- All logs are saved and the reads are removed for cleaning space.
+
+### Salmon Indexing (SCRIPTS/SALMON_INDEX.sh)
+- **THIS SCRIPT HAS TO BE EXECUTED FROM THE MAIN FOLDER.**
+- This script uses Genome/Transcriptome (not provided) to create the Salmon Index for further steps.
+
 ### Data Retrieval and Salmon Quantification (SCRIPTS/SALMON_RETRIEVAL_QUANT.sh) **SGE**
 - **THIS SCRIPT REQUIRES SALMON INDEX** before it can be executed.
 - **THIS SCRIPT HAS TO BE EXECUTED FROM INSIDE "16_PRJ_ANALYSIS/PROJECTS" folder since it uses relative path.**
@@ -21,6 +40,13 @@
 - After cleaning, the script then run [SALMON](https://salmon.readthedocs.io/en/latest/) for generating quantification tables.
 - Finally, the script runs [MULTIQC](https://github.com/MultiQC/MultiQC) for generating general report and [FASTQC](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/) for individual reports.
 - All logs are saved and the reads are removed for cleaning space.
+
+### Salmon All Genomes (SCRIPTS/SALMON_ALLGENOMES.sh)
+- **THIS SCRIPT HAS TO BE EXECUTED FROM THE MAIN FOLDER.**
+- **THIS SCRIPT REQUIRES SALMON INDEX** before it can be executed.
+- The script runs Salmon Quantification for all desired genomes with a SINGLE PROJECT, and must be adapted to be run with each required project.
+
+--- 
 
 ## 📄 License
 
