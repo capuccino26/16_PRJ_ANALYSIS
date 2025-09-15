@@ -18,7 +18,7 @@
 - This script uses Genome/Transcriptome (not provided) to create the STAR genome reference for further steps.
 
 ### [Data Retrieval and STAR Quantification](/SCRIPTS/STAR_RETRIEVAL_QUANT.sh) **(SGE)**
-- **THIS SCRIPT REQUIRES STAR GENOME** before it can be executed.
+- **THIS SCRIPT REQUIRES [STAR GENOME](#star-genome-generate-sge)** before it can be executed.
 - **THIS SCRIPT HAS TO BE EXECUTED FROM INSIDE "16_PRJ_ANALYSIS/PROJECTS" folder since it uses relative path.**
 - The script reads all available folders with fixed structure [see below](#-project-structure), each folder represents one of the 16 projects previously selected.
 - Each folder (for each of the 16 projects) have one file with Access Number information (SRR_Acc_List.txt), which is the main file for reads information.
@@ -32,7 +32,7 @@
 - This script uses Genome/Transcriptome (not provided) to create the Salmon Index for further steps.
 
 ### [Data Retrieval and Salmon Quantification](/SCRIPTS/SALMON_RETRIEVAL_QUANT.sh) **(SGE)**
-- **THIS SCRIPT REQUIRES SALMON INDEX** before it can be executed.
+- **THIS SCRIPT REQUIRES [SALMON INDEX](#salmon-indexing-sge)** before it can be executed.
 - **THIS SCRIPT HAS TO BE EXECUTED FROM INSIDE "16_PRJ_ANALYSIS/PROJECTS" folder since it uses relative path.**
 - The script reads all available folders with fixed structure [see below](#-project-structure), each folder represents one of the 16 projects previously selected.
 - Each folder (for each of the 16 projects) have one file with Access Number information (SRR_Acc_List.txt), which is the main file for reads information.
@@ -43,7 +43,7 @@
 
 ### [Salmon All Genomes](/SCRIPTS/SALMON_ALLGENOMES.sh) **(SGE)**
 - **THIS SCRIPT HAS TO BE EXECUTED FROM THE MAIN FOLDER.**
-- **THIS SCRIPT REQUIRES SALMON INDEX** before it can be executed.
+- **THIS SCRIPT REQUIRES [SALMON INDEX](#salmon-indexing-sge)** before it can be executed.
 - The script runs Salmon Quantification for all desired genomes with a SINGLE PROJECT, and must be adapted to be run with each required project.
 
 ### [Generate Histogram for Genomes Comparison](/SCRIPTS/MISC_FULL_GENOMES_HISTOGRAM.r)
@@ -64,7 +64,7 @@
 - This script is provided as reference only, the table used for this analysis is retained because it contains unpublished information, there is an [example of the table available](/EXAMPLE_DATA/NET_TABLE.csv) but the script is fully adaptable for any analysis of your own.
 
 ### [Generate UPSET plot for intersection analysis](/SCRIPTS/MISC_UPSET_STATISTICS.r)
-- **THIS SCRIPT REQUIRES FILES FROM THE UPSET MAIN ANALYSIS**
+- **THIS SCRIPT REQUIRES FILES FROM THE [UPSET MAIN ANALYSIS](#intersections-analysis)**
 - R script for statistical analysis of the intersections.
 - The table used in this script [(Intersections 16 Projects)](/EXAMPLE_DATA/16_INTERSECTIONS.tsv) is generated prior to the script execution.
 - The files for the subfolder "GENES_SHARED" is generated prior to the script execution.
