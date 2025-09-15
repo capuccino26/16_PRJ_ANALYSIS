@@ -54,6 +54,10 @@
 - R script for generating diverging bar plots.
 - This script is provided as reference only, the table used for this analysis is retained because it contains unpublished information, but the script is fully adaptable for any analysis of your own
 
+### [Generate Heatmap for genes involved in desired KEGG Pathways](/SCRIPTS/MISC_KEGG_EXP.r)
+- R script for visualization of heatmaps of genes involved in desired KEGG pathway
+- This script uses the pathways [example table](/EXAMPLE_DATA/16_FREQKEGG.csv), however the table used for this analysis is retained because it contains unpublished information, but the script is fully adaptable for any analysis of your own
+- This script is clustered by the analysis, it is not continuous and contains different snippets for different purposes (as documentated).
 --- 
 
 ## 📄 License
@@ -165,6 +169,7 @@ This project is licensed under the [MIT License](LICENSE).
 ├── SCRIPTS/
 │   ├── MISC_DIVERGING_BAR_PLOT.r
 │   ├── MISC_FULL_GENOMES_HISTOGRAM.r
+│   ├── MISC_KEGG_EXP.r
 │   ├── SALMON_ALLGENOMES.sh
 │   ├── SALMON_INDEX.sh
 │   ├── SALMON_RETRIEVAL_QUANT.sh
