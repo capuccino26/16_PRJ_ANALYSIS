@@ -13,11 +13,11 @@
 ## 🛠️ Usage
 - Most of the scripts require high computational resources and were writen to run jobs with [Son of Grid Engine (SGE)](https://wiki.archlinux.org/title/Son_of_Grid_Engine).
 
-### [Star Genome Generate](/SCRIPTS/STAR_GENOMEGENERATE.sh)
+### [Star Genome Generate](/SCRIPTS/STAR_GENOMEGENERATE.sh) **SGE**
 - **THIS SCRIPT HAS TO BE EXECUTED FROM THE MAIN FOLDER.**
 - This script uses Genome/Transcriptome (not provided) to create the STAR genome reference for further steps.
 
-### Data Retrieval and STAR Quantification (SCRIPTS/STAR_RETRIEVAL_QUANT.sh) **SGE**
+### [Data Retrieval and STAR Quantification](/SCRIPTS/STAR_RETRIEVAL_QUANT.sh) **SGE**
 - **THIS SCRIPT REQUIRES STAR GENOME** before it can be executed.
 - **THIS SCRIPT HAS TO BE EXECUTED FROM INSIDE "16_PRJ_ANALYSIS/PROJECTS" folder since it uses relative path.**
 - The script reads all available folders with fixed structure [see below](#-project-structure), each folder represents one of the 16 projects previously selected.
@@ -27,11 +27,11 @@
 - Finally, the script runs [MULTIQC](https://github.com/MultiQC/MultiQC) for generating general report and [FASTQC](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/) for individual reports.
 - All logs are saved and the reads are removed for cleaning space.
 
-### Salmon Indexing (SCRIPTS/SALMON_INDEX.sh)
+### [Salmon Indexing](/SCRIPTS/SALMON_INDEX.sh) **SGE**
 - **THIS SCRIPT HAS TO BE EXECUTED FROM THE MAIN FOLDER.**
 - This script uses Genome/Transcriptome (not provided) to create the Salmon Index for further steps.
 
-### Data Retrieval and Salmon Quantification (SCRIPTS/SALMON_RETRIEVAL_QUANT.sh) **SGE**
+### [Data Retrieval and Salmon Quantification](/SCRIPTS/SALMON_RETRIEVAL_QUANT.sh) **SGE**
 - **THIS SCRIPT REQUIRES SALMON INDEX** before it can be executed.
 - **THIS SCRIPT HAS TO BE EXECUTED FROM INSIDE "16_PRJ_ANALYSIS/PROJECTS" folder since it uses relative path.**
 - The script reads all available folders with fixed structure [see below](#-project-structure), each folder represents one of the 16 projects previously selected.
@@ -41,12 +41,12 @@
 - Finally, the script runs [MULTIQC](https://github.com/MultiQC/MultiQC) for generating general report and [FASTQC](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/) for individual reports.
 - All logs are saved and the reads are removed for cleaning space.
 
-### Salmon All Genomes (SCRIPTS/SALMON_ALLGENOMES.sh)
+### [Salmon All Genomes](/SCRIPTS/SALMON_ALLGENOMES.sh) **SGE**
 - **THIS SCRIPT HAS TO BE EXECUTED FROM THE MAIN FOLDER.**
 - **THIS SCRIPT REQUIRES SALMON INDEX** before it can be executed.
 - The script runs Salmon Quantification for all desired genomes with a SINGLE PROJECT, and must be adapted to be run with each required project.
 
-### Generate Histogram for Genomes Comparison (SCRIPTS/MISC_GULL_GENOMES_HISTOGRAM.r)
+### [Generate Histogram for Genomes Comparison](/SCRIPTS/MISC_GULL_GENOMES_HISTOGRAM.r)
 - R script for visualization of the genomes comparisons
 - It requires the data table (EXAMPLE_DATA/RES_DEG_SUMMARY.csv)
 
