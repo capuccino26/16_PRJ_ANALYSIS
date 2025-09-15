@@ -58,11 +58,6 @@
 - R script for visualization of heatmaps of genes involved in desired KEGG pathway
 - This script uses the pathways [example table](/EXAMPLE_DATA/16_FREQKEGG.csv), however the table used for this analysis is retained because it contains unpublished information, but the script is fully adaptable for any analysis of your own
 - This script is clustered by the analysis, it is not continuous and contains different snippets for different purposes (as documentated).
---- 
-
-## 📄 License
-
-This project is licensed under the [MIT License](LICENSE).
 
 ---
 
@@ -184,3 +179,11 @@ This project is licensed under the [MIT License](LICENSE).
 - The file "contrasts.txt" contains the contrast name retrieved from the Metadata from the SRA database (all represents drought contrasts but with different names for different projects).
 - The file "samplefinfo.txt" contains all the Metadata retrieved from the SRA database.
 - The files "SRR_Acc_list.txt", "SRR_Acc_Lists.txt" and "SRR_Acc_Listp.txt" represents all the reads for each project, split for single/paired ended reads since some projects mix both.
+
+---
+
+## 📄 License
+
+This project is licensed under the [MIT License](LICENSE).
+
+---
