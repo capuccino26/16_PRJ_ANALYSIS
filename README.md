@@ -52,12 +52,24 @@
 
 ### [Generate Diverging Bar Plots](/SCRIPTS/MISC_DIVERGING_BAR_PLOT.r)
 - R script for generating diverging bar plots.
-- This script is provided as reference only, the table used for this analysis is retained because it contains unpublished information, but the script is fully adaptable for any analysis of your own
+- This script is provided as reference only, the table used for this analysis is retained because it contains unpublished information, there is an [example of the table available](/EXAMPLE_DATA/NET_TABLE.csv) but the script is fully adaptable for any analysis of your own.
 
 ### [Generate Heatmap for genes involved in desired KEGG Pathways](/SCRIPTS/MISC_KEGG_EXP.r)
-- R script for visualization of heatmaps of genes involved in desired KEGG pathway
-- This script uses the pathways [example table](/EXAMPLE_DATA/16_FREQKEGG.csv), however the table used for this analysis is retained because it contains unpublished information, but the script is fully adaptable for any analysis of your own
+- R script for visualization of heatmaps of genes involved in desired KEGG pathway.
+- This script uses the pathways [example table](/EXAMPLE_DATA/16_FREQKEGG.csv), however, the main table used for this analysis is retained because it contains unpublished information, there is an [example of the table available](/EXAMPLE_DATA/NET_TABLE.csv) but the script is fully adaptable for any analysis of your own.
 - This script is clustered by the analysis, it is not continuous and contains different snippets for different purposes (as documentated).
+
+### [Intersections analysis](/SCRIPTS/MISC_UPSET.py)
+- Python script for complete analysis of intersections between the 16 projects.
+- This script is provided as reference only, the table used for this analysis is retained because it contains unpublished information, there is an [example of the table available](/EXAMPLE_DATA/NET_TABLE.csv) but the script is fully adaptable for any analysis of your own.
+
+### [Generate UPSET plot for intersection analysis](/SCRIPTS/MISC_UPSET_STATISTICS.r)
+- **THIS SCRIPT REQUIRES FILES FROM THE UPSET MAIN ANALYSIS**
+- R script for statistical analysis of the intersections.
+- The table used in this script [(Intersections 16 Projects)](/EXAMPLE_DATA/16_INTERSECTIONS.tsv) is generated prior to the script execution.
+- The files for the subfolder "GENES_SHARED" is generated prior to the script execution.
+- Thie file with example [IDS](/EXAMPLE_DATA/IDS.txt) is provided as example.
+- This script is provided as reference only, the table used for this analysis is retained because it contains unpublished information, there is an [example of the table available](/EXAMPLE_DATA/NET_TABLE.csv) but the script is fully adaptable for any analysis of your own.
 
 ---
 
@@ -165,6 +177,7 @@
 │   ├── MISC_DIVERGING_BAR_PLOT.r
 │   ├── MISC_FULL_GENOMES_HISTOGRAM.r
 │   ├── MISC_KEGG_EXP.r
+│   ├── MISC_UPSET_STATISTICS.r
 │   ├── SALMON_ALLGENOMES.sh
 │   ├── SALMON_INDEX.sh
 │   ├── SALMON_RETRIEVAL_QUANT.sh
