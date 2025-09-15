@@ -46,9 +46,9 @@
 - **THIS SCRIPT REQUIRES SALMON INDEX** before it can be executed.
 - The script runs Salmon Quantification for all desired genomes with a SINGLE PROJECT, and must be adapted to be run with each required project.
 
-### [Generate Histogram for Genomes Comparison](/SCRIPTS/MISC_GULL_GENOMES_HISTOGRAM.r)
-- R script for visualization of the genomes comparisons
-- It requires the data table [(EXAMPLE)](/EXAMPLE_DATA/RES_DEG_SUMMARY.csv)
+### [Generate Histogram for Genomes Comparison](/SCRIPTS/MISC_FULL_GENOMES_HISTOGRAM.r)
+- R script for visualization of the genomes comparisons.
+- It requires the data table [(EXAMPLE)](/EXAMPLE_DATA/RES_DEG_SUMMARY.csv).
 
 --- 
 
