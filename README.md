@@ -76,6 +76,13 @@
 ## 📂 Project Structure
 ```markdown
 16_PRJ_ANALYSIS/
+├── EXAMPLE_DATA/
+│   ├── 16_FREQKEGG.csv
+│   ├── 16_INTERSECTIONS.tsv
+│   ├── IDS.txt
+│   ├── NET_TABLE.csv
+│   └── RES_DEG_SUMMARY.csv
+├── LICENSE
 ├── PROJECTS/
 │   ├── PRJNA182108/
 │   │   ├── contrast.txt
@@ -173,19 +180,20 @@
 │       ├── SRR_Acc_Listp.txt
 │       ├── SRR_Acc_Lists.txt
 │       └── SRR_Acc_List.txt
-├── SCRIPTS/
-│   ├── MISC_DIVERGING_BAR_PLOT.r
-│   ├── MISC_FULL_GENOMES_HISTOGRAM.r
-│   ├── MISC_KEGG_EXP.r
-│   ├── MISC_UPSET_STATISTICS.r
-│   ├── SALMON_ALLGENOMES.sh
-│   ├── SALMON_INDEX.sh
-│   ├── SALMON_RETRIEVAL_QUANT.sh
-│   ├── STAR_GENOMEGENERATE.sh
-│   └── STAR_RETRIEVAL_QUANT.sh
 ├── PROJECTS_LIST.txt
-├── LICENSE
-└── README.md
+├── README.md
+└── SCRIPTS/
+    ├── MISC_DIVERGING_BAR_PLOT.r
+    ├── MISC_FULL_GENOMES_HISTOGRAM.r
+    ├── MISC_KEGG_EXP.r
+    ├── MISC_UPSET.py
+    ├── MISC_UPSET_STATISTICS.r
+    ├── SALMON_ALLGENOMES.sh
+    ├── SALMON_INDEX.sh
+    ├── SALMON_RETRIEVAL_QUANT.sh
+    ├── STAR_GENOMEGENERATE.sh
+    └── STAR_RETRIEVAL_QUANT.sh
+
 ```
 
 ## Under the subfolder (PROJECTS) each of the 16 projects are listed with fixed structure for five files:
