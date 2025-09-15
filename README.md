@@ -1,4 +1,4 @@
-]# 16_PRJ_ANALYSIS
+# 16_PRJ_ANALYSIS
 
 > Complete meta-analysis of NCBI SRA database for sugarcane under water deficit.
 
