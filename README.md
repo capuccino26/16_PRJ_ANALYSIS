@@ -20,7 +20,7 @@
 ### Data Retrieval and STAR Quantification (SCRIPTS/STAR_RETRIEVAL_QUANT.sh) **SGE**
 - **THIS SCRIPT REQUIRES STAR GENOME** before it can be executed.
 - **THIS SCRIPT HAS TO BE EXECUTED FROM INSIDE "16_PRJ_ANALYSIS/PROJECTS" folder since it uses relative path.**
-- The script reads all available folders with fixed structure [see below](readme-ov-file#-project-structure), each folder represents one of the 16 projects previously selected.
+- The script reads all available folders with fixed structure [see below](#-project-structure), each folder represents one of the 16 projects previously selected.
 - Each folder (for each of the 16 projects) have one file with Access Number information (SRR_Acc_List.txt), which is the main file for reads information.
 - After data retrieval, the script will run [FastP](https://pmc.ncbi.nlm.nih.gov/articles/PMC6129281/) for cleaning and generation of quality reports.
 - After cleaning, the script then run [STAR](https://github.com/alexdobin/STAR) for generating quantification tables.
@@ -34,7 +34,7 @@
 ### Data Retrieval and Salmon Quantification (SCRIPTS/SALMON_RETRIEVAL_QUANT.sh) **SGE**
 - **THIS SCRIPT REQUIRES SALMON INDEX** before it can be executed.
 - **THIS SCRIPT HAS TO BE EXECUTED FROM INSIDE "16_PRJ_ANALYSIS/PROJECTS" folder since it uses relative path.**
-- The script reads all available folders with fixed structure [see below](#project-structure), each folder represents one of the 16 projects previously selected.
+- The script reads all available folders with fixed structure [see below](#-project-structure), each folder represents one of the 16 projects previously selected.
 - Each folder (for each of the 16 projects) have one file with Access Number information (SRR_Acc_List.txt), which is the main file for reads information.
 - After data retrieval, the script will run [FastP](https://pmc.ncbi.nlm.nih.gov/articles/PMC6129281/) for cleaning and generation of quality reports.
 - After cleaning, the script then run [SALMON](https://salmon.readthedocs.io/en/latest/) for generating quantification tables.
