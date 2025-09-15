@@ -13,7 +13,7 @@
 ## 🛠️ Usage
 - Most of the scripts require high computational resources and were writen to run jobs with [Son of Grid Engine (SGE)](https://wiki.archlinux.org/title/Son_of_Grid_Engine).
 
-### Star Genome Generate (SCRIPTS/STAR_GENOMEGENERATE.sh)
+### [Star Genome Generate](/SCRIPTS/STAR_GENOMEGENERATE.sh)
 - **THIS SCRIPT HAS TO BE EXECUTED FROM THE MAIN FOLDER.**
 - This script uses Genome/Transcriptome (not provided) to create the STAR genome reference for further steps.
 
@@ -45,6 +45,10 @@
 - **THIS SCRIPT HAS TO BE EXECUTED FROM THE MAIN FOLDER.**
 - **THIS SCRIPT REQUIRES SALMON INDEX** before it can be executed.
 - The script runs Salmon Quantification for all desired genomes with a SINGLE PROJECT, and must be adapted to be run with each required project.
+
+### Generate Histogram for Genomes Comparison (SCRIPTS/MISC_GULL_GENOMES_HISTOGRAM.r)
+- R script for visualization of the genomes comparisons
+- It requires the data table (EXAMPLE_DATA/RES_DEG_SUMMARY.csv)
 
 --- 
 
