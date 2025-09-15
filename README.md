@@ -18,7 +18,7 @@
 - This script uses Genome/Transcriptome (not provided) to create the STAR genome reference for further steps.
 
 ### Data Retrieval and STAR Quantification (SCRIPTS/STAR_RETRIEVAL_QUANT.sh) **SGE**
-- **THIS SCRIPT REQUIRES STAR INDEX** before it can be executed.
+- **THIS SCRIPT REQUIRES STAR GENOME** before it can be executed.
 - **THIS SCRIPT HAS TO BE EXECUTED FROM INSIDE "16_PRJ_ANALYSIS/PROJECTS" folder since it uses relative path.**
 - The script reads all available folders with fixed structure (see below), each folder represents one of the 16 projects previously selected.
 - Each folder (for each of the 16 projects) have one file with Access Number information (SRR_Acc_List.txt), which is the main file for reads information.
@@ -154,6 +154,14 @@ This project is licensed under the [MIT License](LICENSE).
 │       ├── SRR_Acc_Listp.txt
 │       ├── SRR_Acc_Lists.txt
 │       └── SRR_Acc_List.txt
+├── SCRIPTS/
+│   ├── SALMON_ALLGENOMES.sh
+│   ├── SALMON_INDEX.sh
+│   ├── SALMON_RETRIEVAL_QUANT.sh
+│   ├── STAR_GENOMEGENERATE.sh
+│   └── STAR_RETRIEVAL_QUANT.sh
+├── PROJECTS_LIST.txt
+├── LICENSE
 └── README.md
 ```
 
