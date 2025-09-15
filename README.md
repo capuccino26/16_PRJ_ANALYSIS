@@ -50,6 +50,10 @@
 - R script for visualization of the genomes comparisons.
 - It requires the data table [(EXAMPLE)](/EXAMPLE_DATA/RES_DEG_SUMMARY.csv).
 
+### [Generate Diverging Bar Plots](/SCRIPTS/MISC_DIVERGING_BAR_PLOT.r)
+- R script for generating diverging bar plots.
+- This script is provided as reference only, the table used for this analysis is retained because it contains unpublished information, but the script is fully adaptable for any analysis of your own
+
 --- 
 
 ## 📄 License
@@ -159,6 +163,8 @@ This project is licensed under the [MIT License](LICENSE).
 │       ├── SRR_Acc_Lists.txt
 │       └── SRR_Acc_List.txt
 ├── SCRIPTS/
+│   ├── MISC_DIVERGING_BAR_PLOT.r
+│   ├── MISC_FULL_GENOMES_HISTOGRAM.r
 │   ├── SALMON_ALLGENOMES.sh
 │   ├── SALMON_INDEX.sh
 │   ├── SALMON_RETRIEVAL_QUANT.sh
