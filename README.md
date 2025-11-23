@@ -4,13 +4,13 @@
 
 ---
 
-## 📘 Overview
+## Overview
 
 **16_PRJ_ANALYSIS** is a repository for all scripts used for the Meta-Analysis of projects in the [NCBI SRA](https://www.ncbi.nlm.nih.gov/sra) database for sugarcane under contrasting Water Regimes.
 
 ---
 
-## 🛠️ Usage
+## Usage
 - Most of the scripts require high computational resources and were writen to run jobs with [Son of Grid Engine (SGE)](https://wiki.archlinux.org/title/Son_of_Grid_Engine).
 
 ### [Star Genome Generate](/SCRIPTS/STAR_GENOMEGENERATE.sh) **(SGE)**
@@ -78,7 +78,7 @@
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 ```markdown
 16_PRJ_ANALYSIS/
 ├── EXAMPLE_DATA/
@@ -208,7 +208,7 @@
 
 ---
 
-## 📄 License
+## License
 
 This project is licensed under the [MIT License](LICENSE).
 
