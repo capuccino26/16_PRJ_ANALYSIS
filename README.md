@@ -7,6 +7,7 @@
 ## Overview
 
 **16_PRJ_ANALYSIS** is a repository for all scripts used for the Meta-Analysis of projects in the [NCBI SRA](https://www.ncbi.nlm.nih.gov/sra) database for sugarcane under contrasting Water Regimes.
+
 This repository is related to the publication [Carvalho, P. C., Bombardelli, R. G. H., Contiliani, D. F., Creste, S., Monteiro-Vitorello, C. B., and Figueira, A. (2026). Candidate gene prioritization through integration of public transcriptomic data and network analysis in sugarcane under water deficit. Front. Plant Sci. 17, 1913272. doi: 10.3389/fpls.2026.1913272
 ](https://www.frontiersin.org/journals/plant-science/articles/10.3389/fpls.2026.1913272/full)
 
